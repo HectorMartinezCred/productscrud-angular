@@ -28,4 +28,8 @@ export class ListProductComponent implements OnInit {
     )
   }
 
+  delete(id?: number) {
+    alert("Are you sure to delete product " + id + "?");
+  }
+
 }
