@@ -22,7 +22,7 @@ export class ProductService {
     return this.httpClient.get<Product>(this.productURL + `detailname/${name}`);
   }
   public save(product: Product): Observable<any> {
-    return this.httpClient.post<any>(this.productURL + 'create', product);
+    return this.httpClient.post<any>(this.productURL + 'add', product);
   }
   public update(id: number, product: Product): Observable<any> {
     return this.httpClient.put<any>(this.productURL + `update/${id}`, product);

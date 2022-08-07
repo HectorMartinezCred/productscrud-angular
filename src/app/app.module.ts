@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 
 import { ListProductComponent } from './product/list-product/list-product.component';
 import { DetailProductComponent } from './product/detail-product/detail-product.component';
+import { DetailnameProductComponent } from './product/detailname-product/detailname-product.component';
 import { UpdateProductComponent } from './product/update-product/update-product.component';
 import { AddProductComponent } from './product/add-product/add-product.component';
 
@@ -21,6 +22,7 @@ import { ToastrModule } from 'ngx-toastr';
     AppComponent,
     ListProductComponent,
     DetailProductComponent,
+    DetailnameProductComponent,
     UpdateProductComponent,
     AddProductComponent,
   ],
