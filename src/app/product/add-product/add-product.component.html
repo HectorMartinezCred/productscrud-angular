@@ -1,1 +1,20 @@
-<p>add-product works!</p>
+<div class="card text-white bg-dark mb-3 mt-5" style="max-width:50rem; margin: auto;">
+  <div class="card-header">New Product</div>
+  <div class="card-body">
+    <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name"
+            [(ngModel)]="name" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label for="price">Price</label>
+            <input type="number" class="form-control" id="price" name="price"
+            [(ngModel)]="price" required>
+        </div>
+        <br>
+        <button class="btn btn-outline-light btn-block" [disabled]="!f.valid">Add</button>
+    </form>
+  </div>
+</div>
