@@ -12,13 +12,13 @@ import { ProductService } from 'src/app/service/product.service';
 export class AddProductComponent implements OnInit {
 
   name: string = '';
-  price: number = 0;
+  price: number = null;
 
   constructor(
     private productService: ProductService,
     private toastr: ToastrService,
     private router: Router
-    ) { }
+  ) { }
 
   ngOnInit(): void {
   }
