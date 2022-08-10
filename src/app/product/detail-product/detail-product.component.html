@@ -1,1 +1,13 @@
-<p>detail-product works!</p>
+<div class="card text-white bg-dark mb-3 mt-5" style="max-width:50rem; margin: auto;">
+    <div class="card-header">Product Detail</div>
+    <div class="card-body">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><b>ID: </b>{{product.id}}</li>
+        <li class="list-group-item"><b>Name: </b>{{product.name}}</li>
+        <li class="list-group-item"><b>Price: </b>{{product.price}}</li>
+      </ul>
+    </div>
+    <div class="card-footer">
+        <button class="btn btn-ouline-primary btn-block" (click)="back()"><i class="fa-solid fa-circle-arrow-left"></i> Back</button>
+    </div>
+  </div>

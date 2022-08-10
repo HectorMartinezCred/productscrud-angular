@@ -31,7 +31,7 @@ export class UpdateProductComponent implements OnInit {
           timeOut: 3000,
           progressBar: true
         });
-        this.router.navigate(['/'])
+        this.router.navigate(['/']);
       }
     )
   }
@@ -44,14 +44,14 @@ export class UpdateProductComponent implements OnInit {
           timeOut: 3000,
           progressBar: true
         });
-        this.router.navigate(['/'])
+        this.router.navigate(['/']);
       },
       err => {
         this.toastr.error(err.error.message, 'Fail', {
           timeOut: 3000,
           progressBar: true
         });
-        this.router.navigate(['/'])
+        this.router.navigate(['/']);
       }
     )
   }
