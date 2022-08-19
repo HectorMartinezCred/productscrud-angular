@@ -1,5 +1,5 @@
 <div class="card text-white bg-dark mb-3 mt-5" style="max-width:50rem; margin: auto;">
-    <div class="card-header">New Product</div>
+    <div class="card-header">Update Product</div>
     <div class="card-body" *ngIf="product">
       <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
           <div class="form-group">
@@ -14,7 +14,7 @@
               [(ngModel)]="product.price" required>
           </div>
           <br>
-          <button class="btn btn-outline-light btn-block" [disabled]="!f.valid">Update</button>
+          <button class="btn btn-outline-light btn-block" style="border: none" [disabled]="!f.valid">Update</button>
       </form>
     </div>
   </div>
